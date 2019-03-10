@@ -1,0 +1,25 @@
+*** proceso seguido para realizar la práctica tf_agenda***
+git clone https://github.com/practicas-ging/mooc_git-entrega3_rebase2
+ls -la
+clear
+cd mooc_git-entrega3_rebase2/
+npm install
+clear
+cd ..
+git clone https://github.com/lfortiz/tf_agenda.git tf_agenda
+ls
+cd tf_agenda/
+ls
+ls -la
+git log --oneline
+git rebase --interactive f6e660e
+nano tf_agenda.txt
+git rebase --continue
+git add tf_agenda.txt
+git commit --amend
+
+git rebase --continue
+cat tf_agenda.txt
+git log --oneline
+git push --help
+git push origin/corrected_tf_agenda master
